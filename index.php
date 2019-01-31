@@ -61,7 +61,8 @@
             </section>
         </div>
     <?php endwhile;
-        else: ?>
+    else: ?>
+        <p>まだ食べてないよ！</p>
 <?php endif;?>
 
 <?php get_footer(); ?>
