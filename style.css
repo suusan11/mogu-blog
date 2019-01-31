@@ -1,14 +1,3 @@
-/*
-Theme Name: mogu-blog
-Theme URL: テーマのサイトのURL
-Description: テーマの説明
-Author: 作者の名前
-Version: テーマのバージョン
-Tags: テーマの特徴を表すタグ（カンマ区切り/オプション）
-License: テーマのライセンス
-License URI: テーマのライセンスのURI
-*/
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -119,6 +108,11 @@ p {
 
 .copy-right {
     font-size: 10px;
+}
+@media (min-width: 1000px) {
+    .copy-right {
+        font-size: 14px;
+    }
 }
 
 a {
@@ -465,14 +459,14 @@ html {
     text-align: left;
 }
 .article .article__footer .prev img {
-    width: 20%;
+    width: 10%;
     margin-right: 5%;
 }
 .article .article__footer .next {
     margin-left: auto;
 }
 .article .article__footer .next img {
-    width: 20%;
+    width: 10%;
     margin-left: 5%;
 }
 .article .article__footer a {
