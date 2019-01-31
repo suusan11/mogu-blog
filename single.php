@@ -16,11 +16,10 @@
 
         <div class="container">
             <section class="article">
-<!--                --><?php
-//                    if(has_post_thumbnail()) :
-//                        the_post_thumbnail('large');
-//                ?>
-<!--                --><?php //endif; ?>
+                <?php
+                    if(has_post_thumbnail()) :
+                        the_post_thumbnail(); ?>
+                <?php endif; ?>
                 <div class="article__header">
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
@@ -35,23 +34,24 @@
                 <div class="article__footer">
                     <a href="">
                         <div class="article__footer--flex prev">
-                            <img src="<?php previous_post_link(); ?><?php echo get_template_directory_uri(); ?>/images/arrow-left.svg" alt="arrow left">
-                            <p>ザ・北米飯　ハンバーガー</p>
+	                        <?php previous_post_link(); ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-left.svg" alt="arrow left">
+                            <p><?php previous_post_link($link); ?></p>
                         </div>
                     </a>
                     <a href="">
                         <div class="article__footer--flex next">
-                            <p>ザ・北米飯　ハンバーガー</p>
-                            <img src="<?php next_post_link(); ?><?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="arrow right">
+	                        <?php next_post_link(); ?>
+                            <p><?php next_post_link($link); ?></p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="arrow right">
                         </div>
                     </a>
                 </div>
             </section>
         </div>
-<!--        echo '<br></div>';-->
 
     <?php endwhile;
-    else : ?>
+        else : ?>
      <p>まだ食べてないよ！</p>
 <?php endif; ?>
 
