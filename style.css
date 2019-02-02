@@ -476,6 +476,8 @@ html {
 @media (min-width: 1000px) {
     .article img {
         width: 100%;
+        height:auto;
+        object-fit: cover;
     }
     .article .article__header .category-icon {
         width: 3%;
