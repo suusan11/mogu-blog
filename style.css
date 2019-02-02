@@ -474,9 +474,9 @@ html {
 }
 
 @media (min-width: 1000px) {
-    .article img {
-        width: 100%;
-        height:auto;
+    .article__img--top img {
+        width: 870px;
+        height: 520px;
         object-fit: cover;
     }
     .article .article__header .category-icon {

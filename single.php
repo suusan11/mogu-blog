@@ -16,10 +16,12 @@
 
         <div class="container">
             <section class="article">
-                <?php
-                    if(has_post_thumbnail()) :
-                        the_post_thumbnail(); ?>
-                <?php endif; ?>
+                <div class="article__img--top">
+                    <?php
+                        if(has_post_thumbnail()) :
+                            the_post_thumbnail(); ?>
+                    <?php endif; ?>
+                </div>
                 <div class="article__header">
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
