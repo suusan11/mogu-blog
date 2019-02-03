@@ -34,20 +34,12 @@
                     <p class="article-sentence"><?php the_content(); ?></p>
                 </div>
                 <div class="article__footer">
-                    <a href="">
-                        <div class="article__footer--flex prev">
-	                        <?php previous_post_link(); ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-left.svg" alt="arrow left">
-                            <p><?php previous_post_link($link); ?></p>
+                        <div class="article__footer--prev">
+                            <?php previous_post_link('%link', '<<< %title'); ?>
                         </div>
-                    </a>
-                    <a href="">
-                        <div class="article__footer--flex next">
-	                        <?php next_post_link(); ?>
-                            <p><?php next_post_link($link); ?></p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="arrow right">
+                        <div class="article__footer--next">
+                            <p><?php next_post_link('%link', '%title >>>'); ?></p>
                         </div>
-                    </a>
                 </div>
             </section>
         </div>
