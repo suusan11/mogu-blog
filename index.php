@@ -47,7 +47,7 @@
                         <div class="thumbnail-container">
                             <?php
                             if(has_post_thumbnail()) :
-                                the_post_thumbnail();
+                                the_post_thumbnail('thumbnail');
                                 ?>
                                 <div class="thumbnail-info">
                                     <h1 class="article-title"><?php the_title(); ?></h1>

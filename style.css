@@ -275,6 +275,10 @@ html {
         width: 45%;
         margin: 0 2.5%;
     }
+    .thumbnails .thumbnail-container {
+        width: 100%;
+        height: auto;
+    }
 }
 html {
     font-family: source-han-sans-japanese, sans-serif;
