@@ -38,31 +38,34 @@
 //
 //?>
 
-<?php if(have_posts()):
-    while(have_posts()): the_post();?>
         <div class="container">
             <section class="thumbnails">
-                <a href="<?php the_permalink(); ?>">
-                    <div class="thumbnail-container">
-                        <?php
-                        if(has_post_thumbnail()) :
-                            the_post_thumbnail();
-                            ?>
-                        <?php endif; ?>
-                        <div class="thumbnail-info">
-                            <h1 class="article-title"><?php the_title(); ?></h1>
-                            <p class="article-date"><?php echo get_the_date(); ?></p>
+                <?php if(have_posts()):
+                    while(have_posts()): the_post();?>
+
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="thumbnail-container">
+                            <?php
+                            if(has_post_thumbnail()) :
+                                the_post_thumbnail();
+                                ?>
+                                <div class="thumbnail-info">
+                                    <h1 class="article-title"><?php the_title(); ?></h1>
+                                    <p class="article-date"><?php echo get_the_date(); ?></p>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                    </div>
-                </a>
-                <?php if(the_post() > 10): ?>
-                    <button>もっと見る</button>
+                    </a>
+
+                    <?php endwhile;
+                else: ?>
+                    <p>まだ食べてないよ！</p>
                 <?php endif;?>
             </section>
         </div>
-    <?php endwhile;
-    else: ?>
-        <p>まだ食べてないよ！</p>
+
+<?php if(the_post() > 10): ?>
+    <button><?php the_permalink(); ?>もっと見る</button>
 <?php endif;?>
 
 <?php get_footer(); ?>
