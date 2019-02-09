@@ -9,7 +9,7 @@
 
 <?php get_header(sub); ?>
 
-<?php $category_data = new WP_Query(array('category_name' => 'fastfood')); ?>
+<?php $category_data = new WP_Query(array('category_name' => 'fast-food')); ?>
 <?php if($category_data -> have_posts()):
 	while($category_data -> have_posts()) : $category_data -> the_post(); ?>
 
