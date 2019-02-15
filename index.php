@@ -24,7 +24,7 @@
                     <div class="thumbnail-container">
                         <?php
                         if(has_post_thumbnail()) :
-                            the_post_thumbnail('thumbnail');
+                            the_post_thumbnail('post-thumbnail');
                             ?>
                             <div class="thumbnail-info">
                                 <h1 class="article-title"><?php the_title(); ?></h1>
@@ -33,7 +33,6 @@
                         <?php endif; ?>
                     </div>
                 </a>
-
                 <?php endwhile;
             else: ?>
                 <p>まだ食べてないよ！</p>

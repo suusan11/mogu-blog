@@ -25,7 +25,7 @@
                 <div class="article__header">
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
-                        <p class="article-date"><?php echo get_the_date(); ?></p>
+                        <p class="article-date"><?php the_date(); ?></p>
 	                    <?php the_category(','); ?>
                         <img class="category-icon" src="<?php echo get_template_directory_uri(); ?>/images/burger.svg" alt="icon burger">
                     </div>
@@ -34,12 +34,12 @@
                     <p class="article-sentence"><?php the_content(); ?></p>
                 </div>
                 <div class="article__footer">
-                        <div class="article__footer--prev">
-                            <?php previous_post_link('%link', '<<< %title'); ?>
-                        </div>
-                        <div class="article__footer--next">
-                            <p><?php next_post_link('%link', '%title >>>'); ?></p>
-                        </div>
+                    <div class="article__footer--prev">
+                        <?php previous_post_link('%link', '<<< %title'); ?>
+                    </div>
+                    <div class="article__footer--next">
+                        <p><?php next_post_link('%link', '%title >>>'); ?></p>
+                    </div>
                 </div>
             </section>
         </div>
