@@ -31,7 +31,9 @@ $cats = $cats[0];
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
                         <p class="article-date"><?php the_date(); ?></p>
-                        <div class="category-icon <?php echo $cats -> category_nicename; ?>"></div>
+                        <div class="category-icon">
+                            <div class=" <?php echo $cats -> category_nicename; ?>"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="article__main">

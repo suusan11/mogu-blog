@@ -465,8 +465,26 @@ html {
     font-weight: 100;
 }
 .article .article__header--flex .category-icon {
-    width: 5%;
+    width: 32px;
+    height: 32px;
     margin-left: 2%;
+    object-fit: cover;
+}
+.article .article__header--flex .category-icon .fastfood {
+    background: url("images/fastfood.png") no-repeat top left;
+    height: 100%;
+}
+.article .article__header--flex .category-icon .cafe {
+    background: url("images/cafe2.png") no-repeat;
+    height: 100%;
+}
+.article .article__header--flex .category-icon .restaurant {
+    background: url("images/restaurant.png") no-repeat;
+    height: 100%;
+}
+.article .article__header--flex .category-icon .sweet {
+    background: url("images/sweet.png") no-repeat;
+    height: 100%;
 }
 .article .article__main p.article-sentence {
     font-size: 300;
@@ -504,9 +522,9 @@ html {
         height: 520px;
         object-fit: cover;
     }
-    .article .article__header .category-icon {
-        width: 3%;
-    }
+    /*.article .article__header .category-icon {*/
+        /*width: 3%;*/
+    /*}*/
 }
 .archive {
     margin: 20% auto;
