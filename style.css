@@ -403,11 +403,15 @@ html {
     width: 10%;
 }
 
+.menu-sub-menu-container {
+    width: 70%;
+}
+
 .header__sub-nav-menus {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 .header__sub-nav-menus a {

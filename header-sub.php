@@ -35,7 +35,7 @@
         <a class="header__sub-nav-logo" href="<?php echo home_url('/'); ?>"><img src="./images/pig.svg" alt="sample icon"></a>
 	    <?php
 	    wp_nav_menu( array(
-			    'theme_location' => 'main',
+			    'theme_location' => 'sub',
 			    'menu_class' => 'header__sub-nav-menus'
 		    )
 	    )
