@@ -39,7 +39,7 @@
     <header class="header__main">
         <?php
 	    wp_nav_menu( array(
-			    'theme_location' => 'primary',
+			    'theme_location' => 'main',
 			    'menu_class' => 'header__main-nav'
 		    )
 	    )

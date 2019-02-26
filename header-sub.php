@@ -31,11 +31,14 @@
 </head>
 <body>
 <header class="header__sub">
-    <ul class="header__sub-nav">
-        <a class="home__link" href="<?php echo home_url('/'); ?>"><img src="./images/pig.svg" alt="sample icon"></a>
-        <li><a href="./article.html">カナダ飯</a></li>
-        <li><a href="">ジャパン飯</a></li>
-        <li><a href="./archive.html">アーカイブ</a></li>
-        <li><a href="./category.html">カテゴリ</a></li>
-    </ul>
+    <nav class="header__sub-nav">
+        <a class="header__sub-nav-logo" href="<?php echo home_url('/'); ?>"><img src="./images/pig.svg" alt="sample icon"></a>
+	    <?php
+	    wp_nav_menu( array(
+			    'theme_location' => 'main',
+			    'menu_class' => 'header__sub-nav-menus'
+		    )
+	    )
+	    ?>
+    </nav>
 </header>

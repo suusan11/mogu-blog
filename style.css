@@ -395,14 +395,22 @@ html {
     padding: 0 5%;
     background-color: #B4061F;
 }
-.header__sub-nav .home__link {
+.header__sub-nav-logo {
     display: inline;
     width: 10%;
 }
-.header__sub-nav .home__link img {
+.header__sub-nav-logo img {
     width: 10%;
 }
-.header__sub-nav a {
+
+.header__sub-nav-menus {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+}
+
+.header__sub-nav-menus a {
     color: #FFFFFF;
     font-weight: 300;
 }
