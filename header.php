@@ -37,10 +37,11 @@
     <!--end hero image-->
 
     <header class="header__main">
-        <ul class="header__main-nav">
-            <li><a href="<?php get_single_template(); ?>">カナダ飯</a></li>
-            <li><a href="">ジャパン飯</a></li>
-            <li><a href="html/archive.html">アーカイブ</a></li>
-            <li><a href="html/category.html">カテゴリ</a></li>
-        </ul>
+        <?php
+	    wp_nav_menu( array(
+			    'theme_location' => 'primary',
+			    'menu_class' => 'header__main-nav'
+		    )
+	    )
+	    ?>
     </header>
