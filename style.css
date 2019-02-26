@@ -247,7 +247,7 @@ html {
 }
 .thumbnails .thumbnail-container img {
     width: 100%;
-    height: auto;
+    height: 330px;
     object-fit: cover;
 }
 .thumbnails .thumbnail-container .thumbnail-info {
