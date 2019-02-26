@@ -9,6 +9,11 @@
 
 <?php get_header(sub); ?>
 
+<?php
+$cats = get_the_category();
+$cats = $cats[0];
+?>
+
 <?php if ( have_posts() ) : ?>
     <?php
     // Start the loop.
@@ -26,8 +31,7 @@
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
                         <p class="article-date"><?php the_date(); ?></p>
-	                    <?php the_category(','); ?>
-                        <img class="category-icon" src="<?php echo get_template_directory_uri(); ?>/images/burger.svg" alt="icon burger">
+                        <div class="category-icon <?php echo $cats -> category_nicename; ?>"></div>
                     </div>
                 </div>
                 <div class="article__main">
