@@ -34,6 +34,7 @@ $cats = $cats[0];
                         <div class="category-icon">
                             <div class=" <?php echo $cats -> category_nicename; ?>"></div>
                         </div>
+                        <?php the_category(); ?>
                     </div>
                 </div>
                 <div class="article__main">
