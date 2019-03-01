@@ -507,6 +507,7 @@ html {
 }
 .article__tags a {
     color: #5F5F5F;
+    margin-right: 3%;
 }
 .article .article__footer {
     margin: 20% 0;
