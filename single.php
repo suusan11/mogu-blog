@@ -41,7 +41,10 @@ $cats = $cats[0];
                     <p class="article-sentence"><?php the_content(); ?></p>
                 </div>
                 <div class="article__tags">
-                    <p><?php the_tags('#', '#', ' '); ?></p>
+                    <p>
+                        <?php
+                            $before = '<img src="'. get_template_directory_uri().'/images/tag.png">';
+                        the_tags($before, '/', ' '); ?></p>
                 </div>
                 <div class="article__footer">
                     <div class="article__footer--prev">

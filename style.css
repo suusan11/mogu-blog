@@ -501,13 +501,15 @@ html {
 }
 .article__tags p {
     font-weight: lighter;
+    display: flex;
+    align-items: center;
 }
 .article__tags #text {
     color: pink;
 }
 .article__tags a {
     color: #5F5F5F;
-    margin-right: 3%;
+    padding: 0 2%;
 }
 .article .article__footer {
     margin: 20% 0;
