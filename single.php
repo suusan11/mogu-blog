@@ -40,6 +40,9 @@ $cats = $cats[0];
                 <div class="article__main">
                     <p class="article-sentence"><?php the_content(); ?></p>
                 </div>
+                <div class="article__tags">
+                    <p><?php the_tags('#', '#', ' '); ?></p>
+                </div>
                 <div class="article__footer">
                     <div class="article__footer--prev">
                         <?php previous_post_link('%link', '<<< %title'); ?>

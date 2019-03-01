@@ -496,6 +496,18 @@ html {
     font-size: 300;
     line-height: 2;
 }
+.article__tags {
+    margin-top: 10%;
+}
+.article__tags p {
+    font-weight: lighter;
+}
+.article__tags #text {
+    color: pink;
+}
+.article__tags a {
+    color: #5F5F5F;
+}
 .article .article__footer {
     margin: 20% 0;
     border-top: 1px solid #E6E6E6;
