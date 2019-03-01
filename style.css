@@ -406,16 +406,15 @@ html {
 .menu-sub-menu-container {
     width: 90%;
 }
-.menu-main-menu-container {
-    width: 80%;
-}
 .header__sub-nav-menus {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: center;
     width: 100%;
 }
-
+.header__sub-nav-menus li {
+    margin-left: 10%;
+}
 .header__sub-nav-menus a {
     color: #FFFFFF;
     font-weight: 300;
