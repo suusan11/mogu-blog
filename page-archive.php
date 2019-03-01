@@ -50,7 +50,7 @@ get_header();
 				$the_year = substr($year,-8,4); //to show only year part
 
 					$out .= '<li class="archive__date--list-year">' . $the_year;
-					$out .= '<ul class="month-archive-list">';
+					$out .= '<ul class="archive__date--list-month">';
 
 				foreach ($monthly_archives as $month) {
 					//find target year inside of the month
@@ -68,25 +68,5 @@ get_header();
 			echo $out;
 		?>
 	</div>
-
-<!--		<ul class="archive__date--list">-->
-<!--			<li class="archive__date--list-year">2018-->
-<!--				<ul class="archive__date--list-month">-->
-<!--					<li><a href="https://cosybench.local/2018/02/">2018年2月</a> (1)</li>-->
-<!--					<li><a href="https://cosybench.local/2018/01/">2018年1月</a> (2)</li>-->
-<!--				</ul>-->
-<!--			</li>-->
-<!--			<li class="archive__date--list-year">2017-->
-<!--				<ul class="archive__date--list-month">-->
-<!--					<li><a href="https://cosybench.local/2017/12/">2017年12月</a> (3)</li>-->
-<!--					<li><a href="https://cosybench.local/2017/11/">2017年11月</a> (5)</li>-->
-<!--					<li><a href="https://cosybench.local/2017/10/">2017年10月</a> (7)</li>-->
-<!--					<li><a href="https://cosybench.local/2017/09/">2017年9月</a> (8)</li>-->
-<!--					<li><a href="https://cosybench.local/2017/08/">2017年8月</a> (8)</li>-->
-<!---->
-<!--				</ul>-->
-<!--			</li>-->
-<!--		</ul>-->
-
 
 <?php get_footer(); ?>
