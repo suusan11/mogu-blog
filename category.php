@@ -23,11 +23,7 @@ $cats = $cats[0];
 			<h1><?php the_category(); ?></h1>
 		</div>
 		<div class="category__intro--desc">
-			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-				Aenean commodo ligula eget dolor. Aenean massa.
-				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-			</p>
+			<?php echo category_description(); ?>
 		</div>
 	</div>
 	<!--/category intro-->
