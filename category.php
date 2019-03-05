@@ -50,8 +50,9 @@ get_header('sub');
 						</div>
 
 					<!--other posts-->
-					<?php else: ?>
-						<div class="thumbnails__category-other">
+
+					<div class="thumbnails__category-other">
+						<?php else: ?>
 							<a href="<?php the_permalink(); ?>">
 								<div class="thumbnail-container">
 									<?php
@@ -65,8 +66,8 @@ get_header('sub');
 									<?php endif; ?>
 								</div>
 							</a>
-						</div>
-					<?php endif; ?>
+						<?php endif; ?>
+
 
 			<?php endwhile;
 		else: ?>
@@ -82,6 +83,7 @@ get_header('sub');
 			wp_link_pages();
 		}
 		?>
+		</div>
 	</section>
 </div>
 
