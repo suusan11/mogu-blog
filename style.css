@@ -100,10 +100,6 @@ main {
     display: block;
 }
 
-section {
-    min-height: 460px;
-}
-
 h1 {
     font-size: 1.428rem;
     font-family: source-han-sans-japanese, sans-serif;
@@ -177,6 +173,7 @@ footer p {
     font-weight: 100;
 }
 
+/*hero section*/
 .hero {
     width: 100%;
 }
@@ -201,6 +198,8 @@ html {
         font-size: 21px;
     }
 }
+
+/*header*/
 .header__main {
     width: 100%;
 }
@@ -308,8 +307,9 @@ html {
         font-size: 21px;
     }
 }
+/*about part*/
 .intro {
-    margin: 15% 0 0;
+    margin: 15% 0;
 }
 .intro .intro-icon {
     position: relative;
@@ -351,8 +351,8 @@ html {
     margin: 50px 0;
 }
 .intro .intro-flex img {
-    width: 40%;
-    height: 150px;
+    width: 20%;
+    height: 100px;
     object-fit: cover;
     object-position: 0 20%;
     border: none;
@@ -360,6 +360,7 @@ html {
 .intro .intro-flex p {
     display: inline-block;
     width: 70%;
+    font-size: 0.8rem;
     font-weight: 200;
     line-height: 1.5;
     margin-left: 5%;
@@ -445,6 +446,8 @@ html {
         font-size: 21px;
     }
 }
+
+/*article page*/
 .article {
     width: 90%;
     margin: 20% auto;
