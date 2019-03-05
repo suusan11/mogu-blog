@@ -206,7 +206,7 @@ html {
 }
 .is_sticky {
     position: fixed;
-    top: 20px;
+    top: 0;
     width: 100%;
 }
 .header__main-nav {
