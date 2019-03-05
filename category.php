@@ -9,6 +9,11 @@
 get_header('sub');
 ?>
 
+<?php
+$cats = get_the_category();
+$cats = $cats[0];
+?>
+
 <div class="container">
 	<div class="category__intro">
 		<div class="category__intro--title">
