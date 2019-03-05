@@ -12,3 +12,8 @@ register_nav_menus( array(
 	'main' => esc_html__( 'Main menu', 'mogu' ),
 	'sub' => esc_html__( 'Sub menu', 'mogu' )
 ) );
+
+function is_first(){
+	global $wp_query;
+	return ($wp_query->current_post === 0);
+}
