@@ -204,6 +204,11 @@ html {
 .header__main {
     width: 100%;
 }
+.is_sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .header__main-nav {
     display: flex;
     justify-content: space-around;

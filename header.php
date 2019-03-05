@@ -36,12 +36,30 @@
     </div>
     <!--end hero image-->
 
-    <header class="header__main">
-        <?php
-	    wp_nav_menu( array(
-			    'theme_location' => 'main',
-			    'menu_class' => 'header__main-nav'
-		    )
-	    )
-	    ?>
+    <header id="js-header">
+        <div class="header__main">
+	        <?php
+	        wp_nav_menu( array(
+			        'theme_location' => 'main',
+			        'menu_class' => 'header__main-nav'
+		        )
+	        )
+	        ?>
+        </div>
     </header>
+
+    <!--sticky header-->
+    <script type="text/javascript">
+        const header = document.getElementById('js-header');
+        const stickyPoint = header.offsetTop;
+
+        const stickyHeader = () => {
+            if(window.pageYOffset > stickyPoint) {
+                header.classList.add('is_sticky');
+            }else {
+                header.classList.remove('is_sticky');
+            }
+        };
+
+        window.addEventListener('scroll', stickyHeader);
+    </script>
