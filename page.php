@@ -42,5 +42,16 @@ else : ?>
 	<p>まだ食べてないよ！</p>
 <?php endif; ?>
 
+<?php the_field('name'); ?>
+<?php the_field('content'); ?>
+<?php
 
+$image = get_field('image');
+print_r($image['url']);
+
+if( !empty($image) ): ?>
+
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%;" />
+
+<?php endif; ?>
 <?php get_footer(); ?>
