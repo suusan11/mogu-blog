@@ -32,7 +32,7 @@
 <body>
 <header class="header__sub">
     <nav class="header__sub-nav">
-        <a class="header__sub-nav-logo" href="<?php echo home_url('/'); ?>"><img src="./images/pig.svg" alt="sample icon"></a>
+        <a class="header__sub-nav-logo" href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="sample icon"></a>
 	    <?php
 	    wp_nav_menu( array(
 			    'theme_location' => 'sub',
