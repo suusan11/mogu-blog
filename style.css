@@ -595,7 +595,7 @@ html {
     text-align: center;
 }
 .archive__date--list-year {
-    font-weight: lighter;
+    font-weight: normal;
 }
 .archive__date--list-month::before {
     content: "";
@@ -609,7 +609,8 @@ html {
     margin-top: 20px;
 }
 .archive__date--list-month li {
-    font-weight: normal;
+    font-weight: lighter;
+    padding-bottom: 2%;
 }
 .archive__date--list-month li a {
     color: #5F5F5F;
