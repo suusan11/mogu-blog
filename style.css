@@ -261,11 +261,6 @@ html {
     font-weight: 300;
 }
 
-@media (min-width: 1000px) {
-    .header__main-nav {
-        height: 80px;
-    }
-}
 html {
     font-family: source-han-sans-japanese, sans-serif;
     font-size: 14px;
