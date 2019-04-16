@@ -38,7 +38,7 @@ $cats = $cats[0];
                     </div>
                 </div>
                 <div class="article__main">
-                    <p class="article-sentence"><?php the_content(); ?></p>
+                    <?php the_content(); ?>
                 </div>
                 <div class="article__tags">
                     <p>

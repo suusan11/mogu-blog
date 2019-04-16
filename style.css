@@ -106,6 +106,20 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    display: inline-block;
+    font-size: 1.285rem;
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 400;
+}
+
 p {
     font-size: 1rem;
 }
@@ -521,8 +535,22 @@ html {
     color: #5f5f5f;
     font-size: 0.8rem;
 }
-.article .article__main p.article-sentence {
-    font-size: 300;
+.article .article__main .article-h2 {
+    background: linear-gradient(transparent 80%, rgba(232, 80, 30, 0.5) 80%);
+    border-radius: 2px;
+    padding-bottom: 2%;
+    margin: 3% 0;
+}
+
+.article .article__main .article-h3 {
+    background: linear-gradient(transparent 80%, rgba(255, 226, 89, 0.5) 80%);
+    border-radius: 2px;
+    padding-bottom: 2%;
+    margin: 3% 0;
+}
+
+.article .article__main .article-sentence {
+    font-weight: 200;
     line-height: 2;
 }
 .article__tags {
