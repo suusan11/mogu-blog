@@ -363,7 +363,7 @@ html {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    margin: 50px 0 20px;
+    margin: 50px auto 20px;
 }
 .intro .intro__flex > img {
     width: 20%;
@@ -374,7 +374,7 @@ html {
 }
 .intro .intro__flex p {
     display: inline-block;
-    width: 70%;
+    width: 90%;
     font-size: 0.8rem;
     font-weight: 200;
     line-height: 1.5;
@@ -387,7 +387,7 @@ html {
     margin: 2% 0 0 5%;
 }
 .intro .intro__flex-insta a {
-    width: 5%;
+    width: 40px;
 }
 .intro .intro__flex-insta img {
     display: inline-block;
