@@ -669,8 +669,8 @@ html {
 
 /*category*/
 .category__intro {
-    width: 100%;
-    margin: 10% 0;
+    width: 90%;
+    margin: 10% auto;
 }
 
 .category__intro--title {
@@ -678,7 +678,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .category__intro--title .category-icon {
@@ -687,7 +687,10 @@ html {
     margin-right: 10px;
     object-fit: cover;
 }
-
+.category__intro--desc p {
+    font-size: 16px;
+    line-height: 2;
+}
 .thumbnails__category {
     width: 100%;
 }
