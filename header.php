@@ -48,6 +48,18 @@
         </div>
     </header>
 
+    <header>
+        <div class="mobile__header--main">
+	        <?php
+	        wp_nav_menu( array(
+			        'theme_location' => 'mobile-main',
+			        'menu_class' => 'mobile__header--main-nav'
+		        )
+	        )
+	        ?>
+        </div>
+    </header>
+
     <!--sticky header-->
     <script type="text/javascript">
         const header = document.getElementById('js-header');

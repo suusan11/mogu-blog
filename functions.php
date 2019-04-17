@@ -10,7 +10,9 @@ add_theme_support('post-thumbnails');
 
 register_nav_menus( array(
 	'main' => esc_html__( 'Main menu', 'mogu' ),
-	'sub' => esc_html__( 'Sub menu', 'mogu' )
+	'sub' => esc_html__( 'Sub menu', 'mogu' ),
+	'mobile-main' => esc_html('Mobile Main menu', 'mogu'),
+	'mobile-sub' => esc_html('Mobile Sub menu', 'mogu')
 ) );
 
 function is_first(){

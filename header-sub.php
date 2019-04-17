@@ -42,3 +42,16 @@
 	    ?>
     </nav>
 </header>
+
+<header class="mobile__header--sub">
+    <nav class="mobile__header--sub-nav">
+        <a class="header__sub-nav-logo" href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="sample icon"></a>
+		<?php
+		wp_nav_menu( array(
+				'theme_location' => 'mobile-sub',
+				'menu_class' => 'mobile__header--sub-nav'
+			)
+		)
+		?>
+    </nav>
+</header>
