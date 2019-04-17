@@ -220,18 +220,16 @@ footer p {
     .mobile__header--main-nav li {
         text-align: center;
     }
-    .mobile__header--main-nav li p {
+    .mobile__header--main-nav li a {
         color: #FFFFFF;
         font-size: 12px;
         font-weight: lighter;
         padding-top: 5px;
     }
-    .mobile__header--main-nav li a {
-        color: #FFFFFF;
-        font-weight: 300;
-    }
     .mobile__header--main-nav li img {
+        display: block;
         width: 28px;
+        margin: 0 auto;
     }
 }
 
@@ -305,7 +303,7 @@ footer p {
     }
     .mobile__header--sub-nav li p {
         color: #FFFFFF;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: lighter;
         padding-top: 5px;
     }
