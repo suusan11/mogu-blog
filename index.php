@@ -47,11 +47,9 @@
 //		        wp_link_pages();
 //	        }
 //	        ?>
-            <div>
-	            <?php if (function_exists("pagination")) {
-		            pagination($additional_loop->max_num_pages);
-	            } ?>
-            </div>
+            <?php if (function_exists("pagination")) {
+                pagination($additional_loop->max_num_pages);
+            } ?>
         </section>
     </div>
 
