@@ -74,19 +74,10 @@ $cats = $cats[0];
 		else: ?>
 			<p>まだ食べてないよ！</p>
 		<?php endif;?>
-
-		<?php
-		if(!is_paged() && get_next_posts_link()) {
-			echo '<button class="link__next-page">もっと見る</button>';
-		}elseif(!is_paged() && !get_next_posts_link()) {
-		}
-		else {
-			wp_link_pages();
-		}
-		?>
-		</div>
 	</section>
 </div>
+
+<?php if( function_exists("the_pagination") ) the_pagination(); ?>
 
 <?php get_template_part('template-parts/content', 'about'); ?>
 
