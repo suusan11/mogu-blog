@@ -776,3 +776,13 @@ footer p {
         height: 430px;
     }
 }
+
+/*----- pagenation -----*/
+.pagination {
+    display: block;
+    padding: 20px 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
