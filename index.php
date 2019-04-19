@@ -38,15 +38,20 @@
                 <p>まだ食べてないよ！</p>
             <?php endif;?>
 
-	        <?php
-	        if(!is_paged() && get_next_posts_link()) {
-		        echo '<button class="link__next-page">もっと見る</button>';
-	        }elseif(!is_paged() && !get_next_posts_link()) {
-	        }
-	        else {
-		        wp_link_pages();
-	        }
-	        ?>
+<!--	        --><?php
+//	        if(!is_paged() && get_next_posts_link()) {
+//		        echo '<button class="link__next-page">もっと見る</button>';
+//	        }elseif(!is_paged() && !get_next_posts_link()) {
+//	        }
+//	        else {
+//		        wp_link_pages();
+//	        }
+//	        ?>
+            <div>
+	            <?php if (function_exists("pagination")) {
+		            pagination($additional_loop->max_num_pages);
+	            } ?>
+            </div>
         </section>
     </div>
 
