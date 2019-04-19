@@ -37,10 +37,10 @@
             else: ?>
                 <p>まだ食べてないよ！</p>
             <?php endif;?>
-
-            <?php if( function_exists("the_pagination") ) the_pagination(); ?>
         </section>
     </div>
+
+    <?php if( function_exists("the_pagination") ) the_pagination(); ?>
 
     <div class="container">
         <section class="intro">
