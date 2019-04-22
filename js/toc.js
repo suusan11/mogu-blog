@@ -12,20 +12,20 @@ jQuery(function() {
             level = 2;
         }
         while (currentlevel < level) {
-            toc += "<ol>";
+            toc += "<ul>";
             currentlevel++;
         }
         while (currentlevel > level) {
-            toc += "</ol>";
+            toc += "</ul>";
             currentlevel--;
         }
         toc += '<li><a href="#' + this.id + '">' + jQuery(this).html() + "</a></li>\n";
     });
     while (currentlevel > 0) {
-        toc += "</ol>";
+        toc += "</ul>";
         currentlevel--;
     }
     if (jQuery(".article__main h2")[0]) {
-        jQuery("#toc").html('<div class="mokuji">CONTENTS</div>'+ toc);
+        jQuery("#toc").html('<div class="title">CONTENTS</div>'+ toc);
     }
 });
