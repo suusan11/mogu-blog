@@ -811,3 +811,57 @@ footer p {
     line-height: 40px;
     text-align: center;
 }
+
+/*----- page index -----*/
+#toc {
+    margin: 30px 40px;
+    padding: 20px;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+.mokuji {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#toc ol {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#toc ol li {
+    font-size: .95em;
+    margin-bottom: 1em;
+    list-style-position: inside;
+    color: #000070;
+    border-bottom: 1px dotted #ddd;
+}
+
+#toc ol a {
+    text-decoration: none;
+    color: #000070;
+}
+
+#toc ol a:hover {
+    opacity: .5;
+}
+
+#toc ol>ol {
+    margin: 0;
+    padding-left: 15px;
+}
+
+#toc ol>ol li {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media (max-width: 599px) {
+    #toc {
+        margin: 30px 0;
+    }
+}

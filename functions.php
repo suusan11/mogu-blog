@@ -44,3 +44,25 @@ function the_pagination() {
 	) );
 	echo '</nav>';
 }
+
+/* Page Index */
+function read_toc_scripts(){
+	wp_enqueue_script( 'toc', get_template_directory_uri() .'/js/toc.js', array('jquery') );
+}
+add_action( 'wp_enqueue_scripts' , 'read_toc_scripts' );
+
+
+
+///* add Page Index above any contents */
+function toc_in($the_content) {
+	if (is_single()) {
+		$toc = "<div id=\"toc\"></div>";
+
+		$h2 = '/<h2.*?>/i';//H2見出し
+		if ( preg_match( $h2, $the_content, $h2s )) {
+			$the_content  = preg_replace($h2, $toc.$h2s[0], $the_content, 1);
+		}
+	}
+	return $the_content;
+}
+add_filter('the_content','toc_in');
