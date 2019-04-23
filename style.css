@@ -888,3 +888,12 @@ footer p {
     font-weight: 200;
     padding: 0 0 0 15px;
 }
+
+figure.wp-block-image figcaption {
+    text-align: left;
+    margin-bottom: -30px;
+    background: #ffffff;
+    color: #545454;
+    font-weight: 200;
+    padding: 0 0 0 15px;
+}
