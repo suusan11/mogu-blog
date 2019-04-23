@@ -880,6 +880,9 @@ footer p {
 }
 
 /*----- figure -----*/
+.wp-block-gallery .blocks-gallery-item figure {
+    margin: 50px 0;
+}
 .wp-block-gallery .blocks-gallery-item figure figcaption {
     text-align: left;
     margin-bottom: -30px;
@@ -889,6 +892,9 @@ footer p {
     padding: 0 0 0 15px;
 }
 
+figure.wp-block-image {
+    margin: 50px 0;
+}
 figure.wp-block-image figcaption {
     text-align: left;
     margin-bottom: -30px;
