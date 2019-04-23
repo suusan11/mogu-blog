@@ -881,7 +881,9 @@ footer p {
 
 /*----- figure -----*/
 .wp-block-gallery .blocks-gallery-item figure {
+    width: 100%;
     margin: 50px 0;
+    text-align: center;
 }
 .wp-block-gallery .blocks-gallery-item figure figcaption {
     text-align: left;
@@ -889,11 +891,13 @@ footer p {
     background: #ffffff;
     color: #545454;
     font-weight: 200;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 90px;
 }
 
 figure.wp-block-image {
+    width: 100%;
     margin: 50px 0;
+    text-align: center;
 }
 figure.wp-block-image figcaption {
     text-align: left;
@@ -901,5 +905,5 @@ figure.wp-block-image figcaption {
     background: #ffffff;
     color: #545454;
     font-weight: 200;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 90px;
 }
