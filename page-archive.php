@@ -7,7 +7,7 @@
  * Template Name: Archive Page
  */
 
-get_header(sub);
+get_header('sub');
 ?>
 
 	<div class="archive__date">

@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php get_header(sub); ?>
+<?php get_header('sub'); ?>
 
 
 <?php if ( have_posts() ) : ?>
