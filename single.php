@@ -19,7 +19,7 @@ $cats = $cats[0];
     // Start the loop.
     while ( have_posts() ) : the_post(); ?>
 
-        <div class="container">
+        <div class="container__article">
             <section class="article">
                 <div class="article__img--top">
                     <?php
