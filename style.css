@@ -161,9 +161,10 @@ footer p {
 /*----- hero section -----*/
 .hero {
     width: 100%;
+    text-align: center;
 }
 .hero img {
-    width: 100%;
+    width: 70%;
     max-height: 800px;
     object-fit: cover;
 }
