@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <title><?php bloginfo('name'); ?></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <!--to use Adobe font-->
     <script>
