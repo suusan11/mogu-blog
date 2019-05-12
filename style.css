@@ -552,6 +552,9 @@ footer p {
     font-weight: 200;
     line-height: 2;
 }
+.article .article__main p strong {
+    font-weight: 500;
+}
 .article__tags {
     margin-top: 10%;
 }
