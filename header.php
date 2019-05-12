@@ -32,9 +32,7 @@
 </head>
 <body>
 
-    <div class="hero">
-<!--        <img src="--><?php //echo get_template_directory_uri(); ?><!--/images/hero.jpg" alt="hero img">-->
-    </div>
+    <div class="hero"></div>
     <!--end hero image-->
 
     <header id="js-header">
