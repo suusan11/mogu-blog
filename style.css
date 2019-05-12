@@ -561,6 +561,11 @@ footer p {
 .article .article__main p strong {
     font-weight: 500;
 }
+.article .article__main p a {
+    font-weight: 700;
+    color: #545454;
+    text-decoration: underline;
+}
 .article__tags {
     margin-top: 10%;
 }
