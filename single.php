@@ -21,12 +21,6 @@ $cats = $cats[0];
 
         <div class="container__article">
             <section class="article">
-                <div class="article__img--top">
-                    <?php
-                        if(has_post_thumbnail()) :
-                            the_post_thumbnail(); ?>
-                    <?php endif; ?>
-                </div>
                 <div class="article__header">
                     <h1 class="article-title"><?php the_title(); ?></h1>
                     <div class="article__header--flex">
@@ -34,9 +28,25 @@ $cats = $cats[0];
                         <div class="category-icon">
                             <div class=" <?php echo $cats -> category_nicename; ?>"></div>
                         </div>
-                        <?php the_category(); ?>
+			            <?php the_category(); ?>
                     </div>
                 </div>
+                <div class="article__img--top">
+                    <?php
+                        if(has_post_thumbnail()) :
+                            the_post_thumbnail(); ?>
+                    <?php endif; ?>
+                </div>
+<!--                <div class="article__header">-->
+<!--                    <h1 class="article-title">--><?php //the_title(); ?><!--</h1>-->
+<!--                    <div class="article__header--flex">-->
+<!--                        <p class="article-date">--><?php //the_date(); ?><!--</p>-->
+<!--                        <div class="category-icon">-->
+<!--                            <div class=" --><?php //echo $cats -> category_nicename; ?><!--"></div>-->
+<!--                        </div>-->
+<!--                        --><?php //the_category(); ?>
+<!--                    </div>-->
+<!--                </div>-->
                 <div class="article__main">
                     <?php the_content(); ?>
                 </div>

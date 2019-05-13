@@ -487,6 +487,7 @@ footer p {
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin: 5% 0;
 }
 .article .article__header {
     margin: 5% 0 3%;
