@@ -37,11 +37,14 @@ $cats = $cats[0];
 						<div class="thumbnails__category-top">
 							<a href="<?php the_permalink(); ?>">
 								<div class="thumbnail-container">
-									<?php
-									if(has_post_thumbnail()) :
-									the_post_thumbnail();
-										?>
+                                    <div class="thumbnails__category-top-img">
+                                        <?php
+                                        if(has_post_thumbnail()) :
+                                        the_post_thumbnail();
+                                            ?>
+                                    </div>
 										<div class="thumbnail-info">
+                                            <p class="article-new">\ NEW /</p>
 											<h1 class="article-title"><?php the_title(); ?></h1>
 											<p class="article-date"><?php echo get_the_date(); ?></p>
 										</div>
@@ -56,26 +59,27 @@ $cats = $cats[0];
 						<?php else: ?>
 							<a href="<?php the_permalink(); ?>">
 								<div class="thumbnail-container">
-									<?php
-									if(has_post_thumbnail()) :
-										the_post_thumbnail();
-										?>
-										<div class="thumbnail-info">
-											<h1 class="article-title"><?php the_title(); ?></h1>
-											<p class="article-date"><?php echo get_the_date(); ?></p>
-										</div>
+                                    <div class="thumbnails__category-other-img">
+                                        <?php
+                                        if(has_post_thumbnail()) :
+                                            the_post_thumbnail();
+                                            ?>
+                                    </div>
+                                    <div class="thumbnail-info">
+                                        <h1 class="article-title"><?php the_title(); ?></h1>
+                                        <p class="article-date"><?php echo get_the_date(); ?></p>
+                                    </div>
 									<?php endif; ?>
 								</div>
 							</a>
 						<?php endif; ?>
 
-
 			<?php endwhile;
 		else: ?>
 			<p>まだ食べてないよ！</p>
 		<?php endif;?>
+                    </div>
 	</section>
-</div>
 
 <?php if( function_exists("the_pagination") ) the_pagination(); ?>
 
