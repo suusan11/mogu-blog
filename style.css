@@ -162,14 +162,14 @@ footer p {
 .hero {
     width: 90%;
     height: 150px;
-    background: url("images/heroMB.jpg") center;
+    background: url("images/heroMB.jpg") left;
     background-size: cover;
 }
 @media (min-width: 649px) {
     .hero {
         width: 100%;
         max-height: 800px;
-        background: url("images/hero 2.jpg") left;
+        background: url("images/hero.jpg") left;
         background-size: cover;
     }
 }
