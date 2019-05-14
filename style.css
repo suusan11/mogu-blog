@@ -161,7 +161,7 @@ footer p {
 /*----- hero section -----*/
 .hero {
     width: 90%;
-    height: 300px;
+    height: 150px;
     background: url("images/heroMB.jpg") center;
     background-size: cover;
 }
@@ -169,7 +169,7 @@ footer p {
     .hero {
         width: 100%;
         max-height: 800px;
-        background: url("images/hero.jpg") center;
+        background: url("images/hero 2.jpg") left;
         background-size: cover;
     }
 }
