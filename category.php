@@ -78,8 +78,8 @@ $cats = $cats[0];
 		else: ?>
 			<p>まだ食べてないよ！</p>
 		<?php endif;?>
-                    </div>
 	</section>
+</div>
 
 <?php if( function_exists("the_pagination") ) the_pagination(); ?>
 
