@@ -351,30 +351,12 @@ footer p {
     cursor: pointer;
 }
 
-@media (min-width: 1000px) {
-    .thumbnails {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 10%;
-    }
-    .thumbnails a {
-        width: 45%;
-        margin: 0 2.5%;
-    }
-    .thumbnails .thumbnail-container {
-        width: 100%;
-        height: auto;
-    }
-}
 @media (min-width: 650px) {
     .thumbnails {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-        padding-top: 10%;
     }
     .thumbnails a {
         width: 45%;
