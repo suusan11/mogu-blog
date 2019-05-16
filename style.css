@@ -193,6 +193,9 @@ footer p {
     padding: 0 5%;
     background-color: #B4061F;
 }
+.header__main-nav li:first-child a {
+    font-size: 21px;
+}
 .header__main-nav a {
     color: #FFFFFF;
     font-weight: 300;
@@ -217,6 +220,9 @@ footer p {
         height: 80px;
         padding: 0 5%;
         background-color: #B4061F;
+    }
+    .mobile__header--main-nav li:first-child a {
+        font-size: 11px;
     }
     .mobile__header--main-nav li a {
         color: #FFFFFF;
